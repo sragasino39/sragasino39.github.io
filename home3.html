@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project</title>
+
+        <link rel="stylesheet" href="nav-bar-styles.css">
+        <link rel = "stylesheet" href = "styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Grape+Nuts&family=Itim&family=Libre+Bodoni:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Grape+Nuts&family=Itim&family=Libre+Bodoni:wght@400;700&family=Pridi:wght@200;300;400;500;600;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Grape+Nuts&family=Itim&family=Libre+Bodoni:wght@400;700&family=Oxygen:wght@300;400;700&family=Pridi:wght@200;300;400;500;600;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+
+        <header>
+            <nav class="navbar">
+                <a class="brand-link" href="index.html">
+                    <span class="brand-title">Beekeeper Club</span>
+                </a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        
+
+        <header class="header">
+            <img class="form-container" src="pictures/beekeep.jpeg" alt="Beekeeper">
+           <h3> <a href="About.html" id="submit1">Learn More</a></h3> 
+        </header>
+
+
+        <main>
+            <div class="leadership-container">
+
+                <h1>Meet the Leadership Team</h1>
+                <br>
+
+                <div class="member-container">
+
+                    <div class="profile-picture">
+                        <img src="pictures/chowder.jpg" alt="Chowder">
+                    </div>
+
+                    <div class="member-info">
+                        <h1>Chowder Clam</h1> 
+                        <h2>Club Treasurer</h2>
+                        <h2>Year: Sophomore</h2>
+                        <h2>Major: Political Science</h2>
+                        <h2>Hometown: NYC, USA</h2>
+                        <h3>Chowder Clamloves honey but growing up in the big apple, he never had the opportunity to work with bees. The Beekeeping club taught him eco-friendly practices to collect raw honey comb! He has helped feature the Club on the campus weekly newsletter and found funding for beekeeping equipment.
+                        </h3>
+                        <br> 
+                        <br> 
+
+                        <button class="email-button" onclick="location.href='mailto:ChowderClam@email.com';">EMAIL</button>
+
+                    </div>
+                   
+                        <div class="button-container">
+                            <button class="button-arrow left-arrow" onclick="location.href='home2.html';"></button>
+                            <button class="button-arrow right-arrow" onclick="location.href='index.html';"></button>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+    
+        
+    <br>
+        
+        <footer>
+            <h2>&copy; COMP 126 FINAL PROJECT 2024</h2>
+        </footer>
+
+        <script>
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbarLinks = document.querySelector('.navbar-links');
+            toggleButton.addEventListener('click', () => {
+              toggleButton.classList.toggle('active'); 
+              navbarLinks.classList.toggle('active');
+            });
+        </script>
+    </body>
+
+      
+</html>
+
+
